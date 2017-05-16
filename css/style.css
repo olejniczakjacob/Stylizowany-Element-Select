@@ -1,0 +1,222 @@
+/*
+	Autor: Jakub Olejniczak
+	Website: http://jakub-olejniczak.pl
+	Github: https://github.com/olejniczakjacob
+	Linkedin: https://www.linkedin.com/in/olejniczakjacob
+*/
+	body{
+		font-family:  Roboto, "Helvetica Neue", Arial, sans-serif;
+	}
+	#wraper{
+		width: 220px; 
+		height: 45px; 
+		position: absolute; 
+		left: 50%; 
+		top: calc(20%); 
+		transform: translate(-50%); 
+		padding: 50px;
+	}
+
+
+/* Style modułu select */
+
+	@keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	#select{
+		width: 100%;
+		position: relative;
+	}
+
+	#select strong{
+		position: absolute;
+	    top: 0;
+	    padding: 9px 12px;
+	    font-size: 20px;
+	    width: 100%;
+	    font-weight: 100;
+	    background: #fff;
+	    box-sizing: border-box;
+	    border-radius: 5px;
+	}
+	#select strong span{
+		color: #464646;
+	}
+	#select strong i.close-open{
+		position: absolute;
+		top: 11px;
+	    right: 8px;
+		padding: 0;
+		margin: 0;
+	    border: 0;
+	    height: 24px;
+	    outline: 0;
+		cursor: pointer;
+		background-color: transparent;
+		z-index: 22222222222222222222222222;
+	}
+	#select strong i.close-open{
+		transition-duration: 0.35s;
+		color: #757575;
+	}
+
+	#select ul{ 
+		margin: 0;
+		display: block;
+		padding: 0;
+	  	position: relative;
+	  	transition-duration: 0.15s;
+	  	z-index: 222222222222222;
+		border: 1.5px solid #e7e7e7;
+    	border-radius: 3px;
+	} 
+	#select ul li { 
+	  	list-style: none; 
+	  	margin:0; 
+	  	padding: 8px 10px;
+	  	font-size: 20px; 
+	  	color: #ffffff; 
+	  	display:none; 
+	  	font-weight: 100;
+    	background-color: #fff;
+	  	cursor:pointer; 
+	  	opacity: 0;
+	} 
+
+	#select.warn ul{ 
+	  	border-bottom: 1.8px solid #e0211b;
+	  	border-radius: 3px 3px 0 0;
+	} 
+	#select.success ul{
+	  	border-bottom: 1.8px solid #1bb826;
+	  	border-radius: 3px 3px 0 0;
+	}
+
+	#select ul.open{
+		border: 1.5px solid #757575;
+	  	border-radius: 3px !important;
+	}
+
+	#select ul.open ~ strong i.close-open{
+		transform: rotate(180deg);
+	}
+	#select ul.open ~ strong span {
+		opacity: 0;
+	}
+
+	#select ul.open li{
+	  	color: #808080;
+	  	display: block;
+	  	padding: 6px 12px 6px 12px;
+	  	animation: fadein 0.1s;
+	  	opacity: 1;
+	}
+
+	#select ul.open li:nth-child(1){
+		display: none;
+	}
+	#select ul.open li:nth-child(2){
+		padding: 8px 12px 6px 12px;
+	  	border-radius: 2px 2px 0 0;
+	}
+	#select ul.open li:nth-child(2).active{
+		animation: initial;
+	}
+	#select ul.open li:last-child{
+		padding: 8px 12px 12px 12px;
+	  	border-radius: 0 0 1.5px 1.5px;
+	}
+
+	#select ul li.active { 
+	  color: #464646; 
+	  display: block; 
+	}
+
+	#select[disabled] ul{
+		border: 1.5px solid #e7e7e7;
+	  	border-radius: 3px;
+	}
+	#select[disabled] ~ button.close-open i{
+		color: #ebebeb;
+	}
+	#select[disabled] ul li{
+		color: #ebebeb !important;
+		cursor: no-drop;
+	}
+	#select[disabled] strong .close-open{
+		cursor: no-drop;
+	}
+	#select[disabled] strong .close-open i{
+    	color: #ebebeb !important
+	}
+	#select[disabled] strong span{
+    	color: #ebebeb !important
+	}
+
+/* before */
+	#select ul:before{ 
+		content: 'Miesiąc';
+		display: table;
+		color: #757575;
+		position: absolute;
+		background-color: #fff;
+		top: -15px;
+	    padding: 0 5px;
+	    left: 8px;
+	    font-weight: 100;
+		opacity: 0;
+		z-index: 2222222;
+		cursor: pointer;
+	} 
+	#select ul.open:before, #select.success ul:before{
+		opacity: 1;
+	}
+	#select[disabled] ul:before{
+		color: #ebebeb !important;
+	}
+
+/* after */
+	#select.warn ul:after{ 
+	  	content: 'Wybierz miesiąc';
+	    color: #e0211b;
+	    position: absolute;
+	    bottom: -16px;
+	    padding: 0 5px;
+	    left: -3px;
+	    font-weight: 100;
+	    font-size: 10px;
+	    transition-duration: 0.5s;
+	} 
+	#select[disabled]:after{
+		display: none;
+	}
+	#select[disabled] ul:after{
+		display: none;
+	}
+	#select ul.open:after{
+		display: none;
+	}
+
+/* hover */
+	#select:hover{
+		transition-duration: 0.5s;
+		border-radius: 3px !important; 
+	}
+	#select:hover ul{
+		border: 1.5px solid #757575 !important;
+	  	border-radius: 3px !important;
+	}
+	#select[disabled]:hover ul{
+		border: 1.5px solid #e7e7e7 !important;
+	}
+	#select:hover ul:after{
+		opacity: 0;
+	}
+	#select ul li:hover {
+		color: #464646;
+	}
+	#selectOld{
+		display: none;
+	}
