@@ -1,8 +1,8 @@
 # Sytylizowany komponent select 
 ### Zadanie rekrutacyjne na stanowisko "Staż w Zespole Design Lab (Frontend Developer), obszar Marketing" w Allegro
 
-Normalnie elementu select nie da się oscylować za pomocą CSS, aby się to dało należy stworzyć za pomocą JS zwykłą listę `ul`
-do której należy dodać elementy `li` i tekst z `option`.
+Normalnie elementu select nie można oscylować za pomocą CSS, aby to zrobić należy stworzyć za pomocą JS zwykłą listę `ul`
+do której trzeba dodać elementy `li` i tekst z `option`.
 
 **Uruchomienie komponentu na stronie:**
 1. Do diva w którym ma być umieszczony komponent należy dodać poniższy kod:
@@ -32,7 +32,7 @@ do której należy dodać elementy `li` i tekst z `option`.
 </div>
 ```
 Wartości pól `option` można zastąpić dowolnym tekstem np. dniami tygodnia. Skrypt JavaScript odczyta te wartości 
-oraz ich ilość i stworzy odpowiednią ilość elementów `li` w liscie `ul`, która zostanie utworzona w `div#select` przed `strong`
+oraz ich ilość i stworzy odpowiednią ilość elementów `li` w liscie `ul`, która zostanie utworzona w `div#select` przed `strong`.
 
 2. Do strony należy podpiąć plik CSS i JS.
 3. I gotowe można teraz cieszyć się dobrze wyglądającym elementem select oraz łatwo go stylizować.
