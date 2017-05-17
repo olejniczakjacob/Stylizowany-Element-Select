@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function(){
 						div.classList.add("warn");
 					}
 					ul.classList.remove("open");
-				});	
+				}); // funkcja zamkniecia listy selecta uruchamiana po kliknięciu wszystkich innych elementów oprócz selecta
 			} else{
 				lol();
 			}

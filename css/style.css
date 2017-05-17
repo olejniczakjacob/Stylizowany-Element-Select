@@ -5,7 +5,7 @@
 	Linkedin: https://www.linkedin.com/in/olejniczakjacob
 */
 	body{
-		font-family:  Roboto, "Helvetica Neue", Arial, sans-serif;
+		font-family: 'Roboto', sans-serif;
 	}
 	#wraper{
 		width: 220px; 
@@ -33,7 +33,7 @@
 	#select strong{
 		position: absolute;
 	    top: 0;
-	    padding: 9px 12px;
+	    padding: 12px 12px 12px 12px;
 	    font-size: 20px;
 	    width: 100%;
 	    font-weight: 100;
@@ -46,7 +46,7 @@
 	}
 	#select strong i.close-open{
 		position: absolute;
-		top: 11px;
+		top: 13px;
 	    right: 8px;
 		padding: 0;
 		margin: 0;
@@ -65,7 +65,7 @@
 	#select ul{ 
 		margin: 0;
 		display: block;
-		padding: 0;
+		padding: 2px;
 	  	position: relative;
 	  	transition-duration: 0.15s;
 	  	z-index: 222222222222222;
@@ -96,7 +96,7 @@
 
 	#select ul.open{
 		border: 1.5px solid #757575;
-	  	border-radius: 3px !important;
+	  	border-radius: 3px;
 	}
 
 	#select ul.open ~ strong i.close-open{
@@ -149,10 +149,10 @@
 		cursor: no-drop;
 	}
 	#select[disabled] strong i.close-open{
-    	color: #ebebeb !important
+    	color: #ebebeb !important;
 	}
 	#select[disabled] strong span{
-    	color: #ebebeb !important
+    	color: #ebebeb !important;
 	}
 
 /* before */
@@ -174,7 +174,7 @@
 		opacity: 1;
 	}
 	#select[disabled] ul:before{
-		color: #ebebeb !important;
+		color: #ebebeb;
 	}
 
 /* after */
@@ -202,14 +202,14 @@
 /* hover */
 	#select:hover{
 		transition-duration: 0.5s;
-		border-radius: 3px !important; 
+		border-radius: 3px ; 
 	}
 	#select:hover ul{
-		border: 1.5px solid #757575 !important;
-	  	border-radius: 3px !important;
+		border: 1.5px solid #757575 ;
+	  	border-radius: 3px ;
 	}
 	#select[disabled]:hover ul{
-		border: 1.5px solid #e7e7e7 !important;
+		border: 1.5px solid #e7e7e7 ;
 	}
 	#select:hover ul:after{
 		opacity: 0;
