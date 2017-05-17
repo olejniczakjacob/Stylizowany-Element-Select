@@ -10,18 +10,18 @@ do której należy dodać elementy `li` i tekst z `option`.
 ```html
 <select id="selectOld">
   <option>Miesiąc</option> 
-  <option value="Styczen">Styczeń</option> 
-  <option value="Luty">Luty</option> 
-  <option value="Marzec">Marzec</option> 
-  <option value="Kwiecien">Kwiecień</option> 
-  <option value="Maj">Maj</option> 
-  <option value="Czerwiec">Czerwiec</option> 
-  <option value="Czerwiec">Lipiec</option> 
-  <option value="Sierpien">Sierpień</option> 
-  <option value="Wrzesien">Wrzesień</option> 
-  <option value="Pazdziernik">Październik</option> 
-  <option value="Listopad">Listopad</option> 
-  <option value="Grudzien">Grudzień</option> 
+  <option>Styczeń</option> 
+  <option>Luty</option> 
+  <option>Marzec</option> 
+  <option>Kwiecień</option> 
+  <option>Maj</option> 
+  <option>Czerwiec</option> 
+  <option>Lipiec</option> 
+  <option>Sierpień</option> 
+  <option>Wrzesień</option> 
+  <option>Październik</option> 
+  <option>Listopad</option> 
+  <option>Grudzień</option> 
 </select>
 
 <div id="select">
