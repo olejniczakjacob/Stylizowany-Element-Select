@@ -148,7 +148,7 @@
 	#select[disabled] strong .close-open{
 		cursor: no-drop;
 	}
-	#select[disabled] strong .close-open i{
+	#select[disabled] strong i.close-open{
     	color: #ebebeb !important
 	}
 	#select[disabled] strong span{
