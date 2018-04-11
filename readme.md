@@ -1,4 +1,4 @@
-# Stylizowany komponent select 
+# Stylizowany element select 
 ### Zadanie rekrutacyjne na stanowisko "Staż w Zespole Design Lab (Frontend Developer), obszar Marketing" w Allegro
 
 Normalnie elementu select nie można oscylować za pomocą CSS, aby to zrobić należy stworzyć za pomocą JS zwykłą listę `ul`
